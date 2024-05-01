@@ -7,6 +7,7 @@ from tensorflow.keras.preprocessing.image import img_to_array
 from PIL import Image
 import numpy as np
 from config import loaded_model
+from flask import jsonify
 
 
 prediction_classes = {
@@ -42,5 +43,9 @@ def predict_image(image: np.array) -> str:
     - str: The predicted class label of the input image.
     """
     prediction = loaded_model.predict(image, verbose=0)[0]
-    predicted_index = np.argmax(prediction)
-    return prediction_classes[predicted_index]
+    predicted_label = prediction_classes[np.argmax(prediction)]
+    return {
+        "prediction": predicted_label,
+        "parasitized": round(float(prediction[0]), 6),
+        "uninfected": round(float(prediction[1]), 6)
+    }

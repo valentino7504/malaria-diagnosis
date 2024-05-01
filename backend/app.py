@@ -19,7 +19,7 @@ def predict():
         smear_image = request.files.getlist("smear_image")[0]
         img_array = preprocess_image(smear_image)
         prediction = predict_image(img_array)
-        return jsonify({"prediction": prediction})
+        return jsonify(prediction)
 
 
 if __name__ == "__main__":
