@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaria Diagnostic Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/icons8-microscope-96.png" type="image/x-icon">
+</head>
+
+<body class="bg-secondary font-rubik pt-4">
+    <div class="bg-primary ml-auto mr-auto w-1/2 py-10">
+        <h1 class="malaria-head text-center font-cabin font-bold">Malaria Diagnostic Tool</h1>
+        <h2 class="info text-center font-semibold font-rubik text-fourth">Powered by a MobileNetV3-based CNN</h2>
+        <form id="smearImageForm" method="post" class="text-center m-auto mt-20 mb-20">
+            <img id="blood_smear" class="text-center mx-auto mb-16" src="./sample_smears/p2.png" alt="blood_smear">
+            <input type="file" name="bloodSmear" id="imageInput" accept="image/*" class="hidden">
+            <label for="imageInput"
+                class="cursor-pointer choose-btn font-cabin bg-fifth text-primary rounded-xl p-2 px-3 hover:bg-black hover:text-white">Upload
+                a file (png)</label>
+        </form>
+        <div class="results bg-third w-1/2 m-auto p-3 rounded-lg">
+            <h3 class="result-header font-cabin font-bold mb-2">Results</h3>
+            <p class="img-name pl-5 font-cabin font-semibold">p2.png</p>
+            <p class="parasitized-p pl-5 mt-5">- Parasitized: <span class="para-value font-bold">0.998812</span></p>
+            <p class="uninfected pl-5">- Uninfected: <span class="uninf-value font-bold">0.001188</span></p>
+            <p class="final-diagnosis mt-5 font-semibold">The results indicate that the sample is <span
+                    class="diag-value font-bold font-cabin">Parasitized</span></p>
+        </div>
+        <p class="more-info font-semibold mt-20 text-center">For more information about this project, click on this <a
+                href="https://github.com/valentino7504/malaria-diagnosis/tree/main"
+                class="text-fifth hover:text-fourth">link</a> to
+            read the project README
+        </p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

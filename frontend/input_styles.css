@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.malaria-head {
+    font-size: 3rem;
+}
+.choose-btn {
+    font-size: 18px;
+}
+.result-header {
+    font-size: 1.2rem;
+}
+.final-diagnosis {
+    font-size: 1rem;
+}
+span.diag-value {
+    color: red;
+    font-size: 1.2rem;
+}
