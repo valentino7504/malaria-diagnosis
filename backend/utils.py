@@ -26,7 +26,7 @@ def preprocess_image(image) -> np.array:
     Returns:
     - np.array: The preprocessed image as a NumPy array.
     """
-    image = Image.open(image).resize((224, 224))
+    image = Image.open(image).convert("RGB").resize((224, 224))
     image = img_to_array(image)
     image = np.expand_dims(image, axis=0)
     return image
