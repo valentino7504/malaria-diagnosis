@@ -1,6 +1,9 @@
 const imageInput = document.getElementById("imageInput");
 const smear = document.getElementById("blood_smear");
 
+let now = new Date();
+document.querySelector("span.year").textContent = now.getFullYear();
+
 function fillImage(event) {
   const [file] = imageInput.files;
   let fileName = "";
