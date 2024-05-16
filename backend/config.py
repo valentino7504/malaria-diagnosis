@@ -10,4 +10,6 @@ from tensorflow.keras.models import load_model
 
 app = Flask(__name__)
 CORS(app)
-loaded_model = load_model("./mobilenet_model/malaria_diagnosis_mobilenetv3.keras")
+loaded_model = load_model(
+    "./mobilenet_model/malaria_diagnosis_mobilenetv3Small.keras"
+)
