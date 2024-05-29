@@ -21,7 +21,7 @@ The Malaria Diagnostic Tool is a web application designed to assist in the detec
 ### Backend
 
 - **Flask:** The backend is built using Flask, a lightweight WSGI web application framework in Python.
-- **Model Loading:** The MobileNetV3-based CNN model is loaded at startup and used for predictions.
+- **Model Loading:** The MobileNetV3Small-based CNN model is loaded at startup and used for predictions.
 - **API Endpoint:** A `/predict` endpoint is provided to handle image uploads and return diagnostic results.
 
 ### Frontend
