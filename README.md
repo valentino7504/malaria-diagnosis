@@ -1,6 +1,6 @@
 # Malaria Diagnostic Tool
 
-The Malaria Diagnostic Tool is a web application designed to assist in the detection of malaria using blood smear images. Leveraging a MobileNetV3-based Convolutional Neural Network (CNN), this tool provides an intuitive interface for uploading images and receiving instant diagnostic results.
+The Malaria Diagnostic Tool is a web application designed to assist in the detection of malaria using blood smear images. Leveraging a MobileNetV3Small-based Convolutional Neural Network (CNN), this tool provides an intuitive interface for uploading images and receiving instant diagnostic results.
 
 ## Features
 
