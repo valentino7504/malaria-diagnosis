@@ -34,11 +34,6 @@ The Malaria Diagnostic Tool is a web application designed to assist in the detec
 
 The application is deployed on Netlify at [malaria-diagnosis.netlify.app](https://malaria-diagnosis.netlify.app/).
 
-## Contributors
-
-- [Your Name](https://github.com/yourusername)
-- [Collaborator Name](https://github.com/collaboratorusername)
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -46,3 +41,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 For any inquiries, please contact me at [edwinmbonyjr@gmail.com](mailto:edwinmbonyjr@gmail.com) or [edwin.ade@stu.cu.edu.ng](mailto:edwin.ade@stu.cu.edu.ng).
+
+© [Edwin Ade | 19CJ025758 | 2024](https://github.com/valentino7504)
