@@ -9,7 +9,9 @@ from tensorflow.keras.models import load_model
 
 
 app = Flask(__name__)
-CORS(app)
+CORS(app,  resources={
+    r"/*": {"origins": "https://malaria-diagnosis.netlify.app"}
+})
 loaded_model = load_model(
     "./mobilenet_model/malaria_diagnosis_mobilenetv3Small.keras"
 )
