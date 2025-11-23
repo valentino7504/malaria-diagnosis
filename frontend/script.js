@@ -19,6 +19,7 @@ function fillImage(event) {
 }
 
 function predict() {
+  const startTime = performance.now();
   const img_file = document.getElementById("imageInput").files[0];
   const formData = new FormData();
   formData.append("smear_image", img_file);
@@ -38,6 +39,9 @@ function predict() {
         } else {
           document.querySelector("span.diag-value").style.color = "red";
         }
+        const endTime = performance.now();
+        const elapsed = endTime - startTime;
+        console.log(`User-perceived latency: ${elapsed.toFixed(2)} ms`);
       } else {
         console.log(response.status);
         console.log(response.statusText);
